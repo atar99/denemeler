@@ -1,0 +1,14 @@
+.section{
+    display:flex;
+    background-color: $background1;
+    border-radius: 1rem;
+    justify-content: center;
+
+    &__cards{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $background2;
+        
+    }}

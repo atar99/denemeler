@@ -1,0 +1,25 @@
+.header{
+    background-color:rgb(70,70,100);
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+    &__links{
+        display: flex;
+        align-items: center;
+
+        &--unorderedList{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            column-gap: 1em;
+        }
+        &--item{
+            text-decoration: none;
+            color:aliceblue;
+        }
+    }
+    &__logo__link{
+        color:aliceblue;
+    }
+}

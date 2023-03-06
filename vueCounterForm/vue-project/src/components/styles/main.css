@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: aliceblue;
+}
+
+.header {
+  background-color: #404070;
+}/*# sourceMappingURL=main.css.map */
