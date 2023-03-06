@@ -1,6 +1,6 @@
 <template>
-  <h1>tarih : {{ tarih }}</h1>
-  <h1>saat : {{ saat }}</h1>
+  <h1>tarih : {{ gun }} / {{ ay }} / {{ yil }}</h1>
+  <h1>saat : {{ saat }} : {{ dakika }} : {{ saniye }}</h1>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       saat: null,
-      dakka: null,
+      dakika: null,
       saniye: null,
       gun: null,
       ay: null,
@@ -20,7 +20,7 @@ export default {
       setInterval(() => {
         let now = new Date();
         this.saat = now.getHours();
-        this.dakka = now.getMinutes();
+        this.dakika = now.getMinutes();
         this.saniye = now.getSeconds();
         this.gun = now.getDay();
         this.ay = now.getMonth();
@@ -28,7 +28,7 @@ export default {
 
         console.log(
           this.saat,
-          this.dakka,
+          this.dakika,
           this.saniye,
           this.gun,
           this.ay,
